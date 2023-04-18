@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+#navigation {
+
+}
+
+#themify {
+	display: block;
+	margin-left: -30px !important;
+}
+#codrops {
+	display: block;
+	margin-left: 0px;
+	margin-top: -30px;
+}
+
+#github {
+	 display: block;
+	 padding-left: 30px;
+	 margin-top: -30px;
+}
+
+
+
+/*inputタグのチェックボックス非表示*/
+
+#input{
+	display: none;
+}
+
+/*3本線を作る*/
+
+.line1,.line2,.line3{
+	width: 20px;
+	height: 2px;
+	background-color: black;
+	margin: 4px;
+}
+
+/*メニューのデザイン*/
+
+#content{
+	background-color: white;
+	width: 200px;
+	height: 100%;
+	transform: translateX(-210px); /*左側の奥の奥に埋めておく*/
+}
+
+img {
+  width: 25px;
+  height: 25px;
+}
+/*チェックが入ったら見せる*/
+
+#input:checked ~ #content{
+	transform: translatex(0px);　/*通常値に戻す*/
+}
+
+.list {
+  list-style-type: none;
+}
+
+/*最小幅が740pxになるまで表示させない*/
+@media screen and (min-width: 740px) {
+    .smafo-menu {
+       display: none;
+    }
+}
+/*最大幅が740pxになったら表示させない*/
+@media screen and (max-width: 740px) {
+    .pc-menu {
+       display: none;
+    }
+}
